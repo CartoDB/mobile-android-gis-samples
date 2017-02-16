@@ -1,0 +1,10 @@
+!table
+!version 300
+!charset WindowsBalticRim
+!edit_version 450
+
+Definition Table
+  Type NATIVE Charset "WindowsBalticRim"
+  Fields 2
+    MNIMI Char (100) ;
+    MKOOD Char (4) ;

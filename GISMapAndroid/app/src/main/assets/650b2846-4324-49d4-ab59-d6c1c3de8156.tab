@@ -1,0 +1,13 @@
+!table
+!version 300
+!charset WindowsLatin1
+
+Definition Table
+  File "650b2846-4324-49d4-ab59-d6c1c3de8156.png"
+  Type "RASTER"
+  (103.84880215540592,1.388855221592633) (1893,1320) Label "Pin 0",
+  (103.84960063990674,1.3887719881827196) (2009,101) Label "Pin 1",
+  (103.84967835168405,1.3900001814235743) (82,2) Label "Pin 2",
+  (103.84893253512254,1.39006109709796) (9,1242) Label "Pin 3"
+  CoordSys Earth Projection 1, 104
+  Units "degree"

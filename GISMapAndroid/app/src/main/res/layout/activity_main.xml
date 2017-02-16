@@ -1,0 +1,15 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="0px"
+    android:paddingLeft="0px"
+    android:paddingRight="0px"
+    android:paddingTop="0px"
+    tools:context="com.carto.gismap.OGROverlayActivity" >
+
+    <com.carto.ui.MapView android:id="@+id/map_view"
+  							android:layout_width="match_parent"
+    						android:layout_height="match_parent" />
+
+</RelativeLayout>

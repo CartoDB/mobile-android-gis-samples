@@ -1,0 +1,13 @@
+!table
+!version 300
+!charset WindowsLatin1
+
+Definition Table
+  File "0cf6e03a-baf0-4445-9b18-d4e66e32fdd7.jpeg"
+  Type "RASTER"
+  (599723.55,5033848.81) (0,0) Label "Top Left",
+  (599739.66,5033779.02) (0,1249) Label "Bottom Left",
+  (599841.62,5033876.07) (2113,0) Label "Top Right",
+  (599857.73,5033806.28) (2113,1249) Label "Bottom Right"
+  CoordSys Earth Projection 8, 104, "m", -75, 0, 0.9996, 500000, 0
+  Units "m"
