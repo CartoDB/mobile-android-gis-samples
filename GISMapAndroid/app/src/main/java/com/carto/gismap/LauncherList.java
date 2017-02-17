@@ -21,12 +21,12 @@ public class LauncherList extends ListActivity{
     // if parameter selector is given, then this is launched first to get a parameter (file path)
     
     private Object[][] samples={
-            {OGROverlayActivity.class,null},
-            {GDALOverlayActivity.class,null},
+            {ShapeFileOgrOverlayActivity.class,null},
+            {GeoTiffGdalOverlayActivity.class,null},
             {BasicEditableOverlayActivity.class,null},
             {EditableLocalOverlayActivity.class,null},
-            {EditableOGROverlayActivity.class,null},
-            {MapInfoOverlayActivity.class,null},
+            {EditableShapeFileOgrOverlayActivity.class,null},
+            {MapInfoRasterOverlayActivity.class,null},
     };
 
     @Override

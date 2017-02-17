@@ -22,12 +22,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.carto.gismap.OGROverlayActivity" />
-        <activity android:name="com.carto.gismap.GDALOverlayActivity" />
+        <activity android:name="com.carto.gismap.ShapeFileOgrOverlayActivity" />
+        <activity android:name="com.carto.gismap.GeoTiffGdalOverlayActivity" />
         <activity android:name="com.carto.gismap.BasicEditableOverlayActivity" />
         <activity android:name="com.carto.gismap.EditableLocalOverlayActivity" />
-        <activity android:name="com.carto.gismap.EditableOGROverlayActivity" />
-        <activity android:name="com.carto.gismap.MapInfoOverlayActivity" />
+        <activity android:name="com.carto.gismap.EditableShapeFileOgrOverlayActivity" />
+        <activity android:name="com.carto.gismap.MapInfoRasterOverlayActivity" />
         <activity android:name="com.carto.filepicker.FilePicker" />
     </application>
 
