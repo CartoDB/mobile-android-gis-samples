@@ -181,9 +181,10 @@ public class ShapeFileOgrOverlayActivity extends Activity {
         // 4. Add 'name' field as labels from same Shapefile, as another layer
 
         TextStyleBuilder textStyleBuilder = new TextStyleBuilder();
-        textStyleBuilder.setTextField("type"); // field in the metadata
-        textStyleBuilder.setFontSize(20);
-        textStyleBuilder.setStrokeColor(new Color(0xff000060));
+        textStyleBuilder.setTextField("name"); // field in the metadata
+        textStyleBuilder.setHideIfOverlapped(false);
+//        textStyleBuilder.setFontSize(20);
+//        textStyleBuilder.setStrokeColor(new Color(0xff000060));
 
 
         StyleSelectorBuilder textStyleSelectorBuilder = new StyleSelectorBuilder();
@@ -193,6 +194,9 @@ public class ShapeFileOgrOverlayActivity extends Activity {
 
         // Create vector layer using OGR data source
         VectorLayer ogrLayerText = new VectorLayer(ogrDataSourceText);
+        // set zoom range for the layer
+        ogrLayerText.setVisibleZoomRange(new MapRange(14,20));
+
         mapView.getLayers().add(ogrLayerText);
 
         // 5. Find data bounds and zoom there
