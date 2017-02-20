@@ -1,2 +1,26 @@
-GISMapAndroid/.idea
+# Maven
+target/
+pom.xml.*
+release.properties
+gen-external-apklibs/
+
+# gradle artifacts
+.gradle/
+
+# IntelliJ
+out/
+.idea/
+*.iml
+classes
+
+# Mac
+.DS_Store
+
+# Misc
+tmp/
+*.*~
 *.apk
+build
+
+# android sdk deployer
+local.properties

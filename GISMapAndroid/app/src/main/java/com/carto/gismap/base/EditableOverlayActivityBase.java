@@ -1,8 +1,7 @@
-package com.carto.gismap;
+package com.carto.gismap.base;
 
 import android.annotation.SuppressLint;
 import android.annotation.TargetApi;
-import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.ProgressDialog;
 import android.content.DialogInterface;
@@ -63,7 +62,7 @@ import java.util.List;
 import java.util.Stack;
 
 @TargetApi(Build.VERSION_CODES.JELLY_BEAN)
-public abstract class EditableOverlayActivityBase extends Activity {
+public abstract class EditableOverlayActivityBase extends BaseActivity {
 
 	private class MyEditEventListener extends VectorEditEventListener {
     	private PointStyle styleNormal;

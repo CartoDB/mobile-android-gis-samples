@@ -1,6 +1,5 @@
 package com.carto.gismap;
 
-import android.app.Activity;
 import android.os.Bundle;
 import android.util.DisplayMetrics;
 
@@ -12,6 +11,8 @@ import com.carto.core.StringVariantMap;
 import com.carto.datasources.LocalVectorDataSource;
 import com.carto.datasources.OGRVectorDataSource;
 import com.carto.gismap.android.R;
+import com.carto.gismap.base.BaseActivity;
+import com.carto.gismap.utils.AssetCopy;
 import com.carto.graphics.Color;
 import com.carto.layers.CartoBaseMapStyle;
 import com.carto.layers.CartoOnlineVectorTileLayer;
@@ -39,7 +40,7 @@ import java.io.IOException;
 /**
  * A sample showing how to use OGRVectorDataSource, style selectors and custom element meta data.
  */
-public class ShapeFileOgrOverlayActivity extends Activity {
+public class ShapeFileOgrOverlayActivity extends BaseActivity {
 	
     static {
         try {

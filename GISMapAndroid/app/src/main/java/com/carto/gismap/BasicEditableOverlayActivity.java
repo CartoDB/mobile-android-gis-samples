@@ -1,6 +1,5 @@
 package com.carto.gismap;
 
-import android.app.Activity;
 import android.os.Bundle;
 
 import com.carto.core.MapPos;
@@ -10,6 +9,7 @@ import com.carto.geometry.PointGeometry;
 import com.carto.geometry.PolygonGeometry;
 import com.carto.datasources.LocalVectorDataSource;
 import com.carto.gismap.android.R;
+import com.carto.gismap.base.BaseActivity;
 import com.carto.graphics.Color;
 import com.carto.layers.CartoBaseMapStyle;
 import com.carto.layers.EditableVectorLayer;
@@ -40,7 +40,7 @@ import com.carto.core.MapPosVector;
 /**
  * A minimal sample displaying EditableVectorLayer usage.
  */
-public class BasicEditableOverlayActivity extends Activity {
+public class BasicEditableOverlayActivity extends BaseActivity {
 		
 	class MyEditEventListener extends VectorEditEventListener {
     	private PointStyle styleNormal;

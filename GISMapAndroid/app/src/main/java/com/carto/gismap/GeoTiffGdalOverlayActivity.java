@@ -2,7 +2,6 @@ package com.carto.gismap;
 
 import java.io.IOException;
 
-import android.app.Activity;
 import android.os.Bundle;
 import android.util.DisplayMetrics;
 
@@ -11,10 +10,11 @@ import com.carto.core.ScreenBounds;
 import com.carto.core.ScreenPos;
 import com.carto.datasources.GDALRasterTileDataSource;
 import com.carto.gismap.android.R;
+import com.carto.gismap.base.BaseActivity;
+import com.carto.gismap.utils.AssetCopy;
 import com.carto.layers.CartoBaseMapStyle;
 import com.carto.layers.CartoOnlineVectorTileLayer;
 import com.carto.layers.RasterTileLayer;
-import com.carto.layers.VectorTileLayer;
 import com.carto.layers.VectorTileRenderOrder;
 import com.carto.projections.EPSG3857;
 import com.carto.ui.MapView;
@@ -23,7 +23,7 @@ import com.carto.utils.Log;
 /**
  * A sample showing how to display GeoTiff overlay using GDALRasterTileDataSource.
  */
-public class GeoTiffGdalOverlayActivity extends Activity {
+public class GeoTiffGdalOverlayActivity extends BaseActivity {
 	
     static {
         try {

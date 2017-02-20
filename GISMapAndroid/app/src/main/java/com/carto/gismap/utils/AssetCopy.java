@@ -1,4 +1,4 @@
-package com.carto.gismap;
+package com.carto.gismap.utils;
 
 import java.io.File;
 import java.io.FileOutputStream;
@@ -11,22 +11,24 @@ import android.util.Log;
 
 
 public class AssetCopy {
+
     public static void copyAssetToSDCard(AssetManager assetManager, String fileName, String toDir) throws IOException {
-            InputStream in = assetManager.open(fileName);
-            File outFile = new File(toDir, fileName);
-            // TODO jaak - check if storage is available and has enough space 
-            if(outFile.exists()){
-                Log.d("hellomap3", "file already exits: "+outFile.getAbsolutePath());
-                return;
-            }
-                
-            OutputStream out = new FileOutputStream(outFile);
-            copyFile(in, out);
-            in.close();
-            in = null;
-            out.flush();
-            out.close();
-            out = null;
+        InputStream in = assetManager.open(fileName);
+        File outFile = new File(toDir, fileName);
+        // You may need to check if storage is available and has enough space
+
+        if (outFile.exists()) {
+            Log.d("hellomap3", "file already exits: " + outFile.getAbsolutePath());
+            return;
+        }
+
+        OutputStream out = new FileOutputStream(outFile);
+        copyFile(in, out);
+        in.close();
+        in = null;
+        out.flush();
+        out.close();
+        out = null;
     }
 
     private static void copyFile(InputStream in, OutputStream out) throws IOException {

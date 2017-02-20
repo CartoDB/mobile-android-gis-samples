@@ -9,6 +9,7 @@ import com.carto.geometry.LineGeometry;
 import com.carto.geometry.MultiGeometry;
 import com.carto.geometry.PointGeometry;
 import com.carto.geometry.PolygonGeometry;
+import com.carto.gismap.base.EditableOverlayActivityBase;
 import com.carto.graphics.Color;
 import com.carto.layers.EditableVectorLayer;
 import com.carto.projections.EPSG3857;
@@ -18,11 +19,9 @@ import com.carto.styles.LineStyleBuilder;
 import com.carto.styles.PointStyleBuilder;
 import com.carto.styles.PolygonStyleBuilder;
 import com.carto.vectorelements.GeometryCollection;
-import com.carto.vectorelements.Polygon;
 import com.carto.vectorelements.VectorElement;
 import com.carto.geometry.GeometryVector;
 import com.carto.core.MapPosVector;
-import com.carto.core.StringMap;
 
 public class EditableLocalOverlayActivity extends EditableOverlayActivityBase {
 	private LocalVectorDataSource editableDataSource;

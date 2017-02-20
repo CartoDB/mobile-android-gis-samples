@@ -12,6 +12,8 @@ import com.carto.core.StringVariantMap;
 import com.carto.core.Variant;
 import com.carto.datasources.OGRVectorDataBase;
 import com.carto.datasources.OGRVectorDataSource;
+import com.carto.gismap.base.EditableOverlayActivityBase;
+import com.carto.gismap.utils.AssetCopy;
 import com.carto.graphics.Color;
 import com.carto.layers.EditableVectorLayer;
 import com.carto.projections.EPSG3857;
@@ -20,11 +22,9 @@ import com.carto.styles.PolygonStyle;
 import com.carto.styles.PolygonStyleBuilder;
 import com.carto.styles.StyleSelector;
 import com.carto.styles.StyleSelectorBuilder;
-import com.carto.utils.Log;
 import com.carto.vectorelements.Polygon;
 import com.carto.vectorelements.VectorElement;
 import com.carto.core.MapPosVector;
-import com.carto.core.StringMap;
 
 public class EditableShapeFileOgrOverlayActivity extends EditableOverlayActivityBase {
 	private OGRVectorDataSource editableDataSource;

@@ -6,7 +6,6 @@ import java.io.IOException;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import android.app.Activity;
 import android.os.Bundle;
 import android.util.DisplayMetrics;
 
@@ -17,6 +16,8 @@ import com.carto.core.ScreenBounds;
 import com.carto.core.ScreenPos;
 import com.carto.datasources.BitmapOverlayRasterTileDataSource;
 import com.carto.datasources.LocalVectorDataSource;
+import com.carto.gismap.base.BaseActivity;
+import com.carto.gismap.utils.AssetCopy;
 import com.carto.graphics.Bitmap;
 import com.carto.layers.CartoBaseMapStyle;
 import com.carto.layers.CartoOnlineVectorTileLayer;
@@ -35,7 +36,7 @@ import com.carto.core.MapPosVector;
 import com.carto.core.ScreenPosVector;
 import com.carto.gismap.android.R;
 
-public class MapInfoRasterOverlayActivity extends Activity {
+public class MapInfoRasterOverlayActivity extends BaseActivity {
 	
 	MapView mapView;
 	LocalVectorDataSource vectorDataSource;
@@ -178,7 +179,7 @@ public class MapInfoRasterOverlayActivity extends Activity {
         // Set the base projection, that will be used for most MapView, MapEventListener and Options methods
         EPSG3857 proj = new EPSG3857();
         mapView.getOptions().setBaseProjection(proj); // note: EPSG3857 is the default, so this is actually not required
-        
+
         // General options
         mapView.getOptions().setRotatable(true); // make map rotatable (this is also the default)
         mapView.getOptions().setTileThreadPoolSize(3); // use 3 threads for tile downloading / raster overlay resampling
