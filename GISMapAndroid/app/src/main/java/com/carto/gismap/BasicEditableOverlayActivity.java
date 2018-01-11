@@ -225,7 +225,7 @@ public class BasicEditableOverlayActivity extends BaseActivity {
         mapView.getOptions().setTileThreadPoolSize(2); // use 2 download threads for tile downloading
 
         // Create base layer. Use registered Nutiteq API key and vector style from assets (osmbright.zip)
-        VectorTileLayer baseLayer = new CartoOnlineVectorTileLayer(CartoBaseMapStyle.CARTO_BASEMAP_STYLE_GRAY);
+        VectorTileLayer baseLayer = new CartoOnlineVectorTileLayer(CartoBaseMapStyle.CARTO_BASEMAP_STYLE_POSITRON);
         mapView.getLayers().add(baseLayer);
 
         // Create editable layer with listeners

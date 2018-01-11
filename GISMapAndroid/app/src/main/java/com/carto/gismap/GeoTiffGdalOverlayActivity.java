@@ -97,7 +97,7 @@ public class GeoTiffGdalOverlayActivity extends BaseActivity {
         mapView.getOptions().setTileThreadPoolSize(2); // use 2 download threads for tile downloading
 
         // Create base layer.
-        CartoOnlineVectorTileLayer baseLayer = new CartoOnlineVectorTileLayer(CartoBaseMapStyle.CARTO_BASEMAP_STYLE_GRAY);
+        CartoOnlineVectorTileLayer baseLayer = new CartoOnlineVectorTileLayer(CartoBaseMapStyle.CARTO_BASEMAP_STYLE_POSITRON);
         // set labels on top
         baseLayer.setLabelRenderOrder(VectorTileRenderOrder.VECTOR_TILE_RENDER_ORDER_LAST);
         mapView.getLayers().add(baseLayer);

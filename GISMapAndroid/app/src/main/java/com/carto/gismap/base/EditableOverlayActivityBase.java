@@ -253,7 +253,7 @@ public abstract class EditableOverlayActivityBase extends BaseActivity {
     }
 
     protected Layer createBaseLayer() {
-        VectorTileLayer baseLayer = new CartoOnlineVectorTileLayer(CartoBaseMapStyle.CARTO_BASEMAP_STYLE_GRAY);
+        VectorTileLayer baseLayer = new CartoOnlineVectorTileLayer(CartoBaseMapStyle.CARTO_BASEMAP_STYLE_POSITRON);
         mapView.getLayers().add(baseLayer);
         return baseLayer;
     }

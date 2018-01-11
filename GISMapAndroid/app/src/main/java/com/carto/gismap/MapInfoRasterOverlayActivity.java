@@ -185,7 +185,7 @@ public class MapInfoRasterOverlayActivity extends BaseActivity {
         mapView.getOptions().setTileThreadPoolSize(3); // use 3 threads for tile downloading / raster overlay resampling
 
         // Create base layer. Use registered Nutiteq API key and vector style from assets (osmbright.zip)
-        VectorTileLayer baseLayer = new CartoOnlineVectorTileLayer(CartoBaseMapStyle.CARTO_BASEMAP_STYLE_GRAY);
+        VectorTileLayer baseLayer = new CartoOnlineVectorTileLayer(CartoBaseMapStyle.CARTO_BASEMAP_STYLE_POSITRON);
         mapView.getLayers().add(baseLayer);
         
         // Initialize an local vector data source
